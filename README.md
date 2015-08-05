@@ -129,3 +129,11 @@ Because nobody is perfect nor have the time to got close to it I didn't work on 
 - but a variable list of values must be the same accros all configurations in the Target
 - if you remove the list of possible values, or the preprocessor macro definition, this toll won't recreate it, you'll need to do it by hand
 
+
+License
+======
+
+Use it as you like in every project you want, redistribute with mentions of my name and don't blame me if it breaks :)
+
+-- dvkch
+ 
