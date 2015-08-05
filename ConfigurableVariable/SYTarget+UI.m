@@ -44,7 +44,11 @@
     else
     {
         for (SYBuildVar *buildVar in self.vars)
-            [[mainItem submenu] addItem:[buildVar menuItem]];
+        {
+            NSMenuItem *item = [buildVar menuItem];
+            if (item)
+                [[mainItem submenu] addItem:item];
+        }
     }
     
     // Create new variable

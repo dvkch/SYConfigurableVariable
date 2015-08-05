@@ -17,7 +17,7 @@
 {
     if (![self.valueByConfigurations count])
     {
-#warning something else?
+        // TODO: think of a better return value
         return nil;
     }
     
