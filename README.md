@@ -3,6 +3,8 @@ Configurable Variable
 
 This Xcode plugin allows you to define build variables that you will be able to define easily via the Edit menu in Xcode.
 
+![Screenshot](https://raw.githubusercontent.com/dvkch/SYConfigurableVariable/master/Sample%20screenshot%201.png)
+
 Example
 =======
 
