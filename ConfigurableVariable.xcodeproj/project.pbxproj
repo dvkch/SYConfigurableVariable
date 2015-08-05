@@ -13,7 +13,6 @@
 		971383851B6A9794005066FF /* SYBuildVar+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 971383841B6A9794005066FF /* SYBuildVar+UI.m */; };
 		9736C5441B6ACE5B00D7E685 /* SYConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9736C5431B6ACE5B00D7E685 /* SYConsts.m */; };
 		9736C5481B6AD3EC00D7E685 /* SYProject+List.m in Sources */ = {isa = PBXBuildFile; fileRef = 9736C5471B6AD3EC00D7E685 /* SYProject+List.m */; };
-		975C04BB1B70D87D00113B31 /* SYInfoPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 975C04BA1B70D87D00113B31 /* SYInfoPlist.m */; };
 		975C04BE1B70D92B00113B31 /* SYTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 975C04BD1B70D92B00113B31 /* SYTarget.m */; };
 		975C04C11B70D93A00113B31 /* SYTarget+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 975C04C01B70D93A00113B31 /* SYTarget+UI.m */; };
 		975C04C41B70DC9000113B31 /* NSMenu+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 975C04C31B70DC9000113B31 /* NSMenu+UI.m */; };
@@ -37,8 +36,6 @@
 		9736C5431B6ACE5B00D7E685 /* SYConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYConsts.m; sourceTree = "<group>"; };
 		9736C5461B6AD3EC00D7E685 /* SYProject+List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SYProject+List.h"; sourceTree = "<group>"; };
 		9736C5471B6AD3EC00D7E685 /* SYProject+List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SYProject+List.m"; sourceTree = "<group>"; };
-		975C04B91B70D87D00113B31 /* SYInfoPlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYInfoPlist.h; sourceTree = "<group>"; };
-		975C04BA1B70D87D00113B31 /* SYInfoPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYInfoPlist.m; sourceTree = "<group>"; };
 		975C04BC1B70D92B00113B31 /* SYTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYTarget.h; sourceTree = "<group>"; };
 		975C04BD1B70D92B00113B31 /* SYTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTarget.m; sourceTree = "<group>"; };
 		975C04BF1B70D93A00113B31 /* SYTarget+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SYTarget+UI.h"; sourceTree = "<group>"; };
@@ -86,8 +83,6 @@
 				97F2F9831B6A695100338222 /* SYBuildVar.m */,
 				9736C5461B6AD3EC00D7E685 /* SYProject+List.h */,
 				9736C5471B6AD3EC00D7E685 /* SYProject+List.m */,
-				975C04B91B70D87D00113B31 /* SYInfoPlist.h */,
-				975C04BA1B70D87D00113B31 /* SYInfoPlist.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -291,7 +286,6 @@
 				9736C5481B6AD3EC00D7E685 /* SYProject+List.m in Sources */,
 				971383821B6A940A005066FF /* SYProject+UI.m in Sources */,
 				97F2F9841B6A695100338222 /* SYBuildVar.m in Sources */,
-				975C04BB1B70D87D00113B31 /* SYInfoPlist.m in Sources */,
 				9736C5441B6ACE5B00D7E685 /* SYConsts.m in Sources */,
 				9713837E1B6A8F61005066FF /* SYProject.m in Sources */,
 				97CBF27E1B6ABFBA0081C5C9 /* NSAlert+UI.m in Sources */,

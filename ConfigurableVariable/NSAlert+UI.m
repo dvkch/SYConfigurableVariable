@@ -16,35 +16,13 @@
     NSAlert *alert = [[self alloc] init];
     [alert setMessageText:@"Help"];
     [alert addButtonWithTitle:@"Close"];
+    [alert addButtonWithTitle:@"Open GitHub"];
     
-    NSArray *details = @[@"This tool allows you to work with configurable variables easily. Though it can create new variables for you, you can also add them manually. Let's take the case of a variable called \"ENVIRONMENT\" with possible values: \"STAGING\" and \"PRODUCTION\"",
-                         @"To add this variable manually you need to do the following steps:",
-                         @"1. Tap on the project on the Navigator panel (left panel)",
-                         @"2. In the project and targets view, tap the project",
-                         @"3. Open the Build Settings tab",
-                         @"4. Tap the + icon, right under \"Build Settings\"",
-                         @"5. Select \"Add User-Defined Setting\"",
-                         @"6. Enter \"ENVIRONMENT\" for your variable",
-                         @"7. Redo steps 4 to 6 with the following variable name: \"ENVIRONMENT%%SUFFIX%%\"",
-                         @"8. The last created variable should contain all possibilities, separated by \"%%SEPARATOR%%\", here its value will be \"STAGING%%SEPARATOR%%PRODUCTION\"",
-                         @"9. Go to the info.plist file of your target",
-                         @"10. Add a new variable called \"ENVIRONMENT\", with the value \"$(ENVIRONMENT)\"",
-                         @"",
-                         @"Be careful:",
-                         @"- \"ENVIRONMENT\" can have a different value for each configuration",
-                         @"- \"ENVIRONMENT%%SUFFIX%%\" must have the same values accross all configurations of a target",
-                         @"- both variable needs to be defined at the target level, not for the whole project"];
-    
-    NSMutableArray *detailsMutable = [NSMutableArray array];
-    for (NSString *detail in details)
-    {
-        NSString *newDetail = [detail stringByReplacingOccurrencesOfString:@"%%SUFFIX%%" withString:[SYConsts valuesVariableNameSuffix]];
-        newDetail = [newDetail stringByReplacingOccurrencesOfString:@"%%SEPARATOR%%" withString:[SYConsts valuesSeparator]];
-        [detailsMutable addObject:newDetail];
-    }
-    
-    [alert setInformativeText:[detailsMutable componentsJoinedByString:@"\n"]];
-    [alert beginSheetModalForWindow:window completionHandler:nil];
+    [alert setInformativeText:@"This tool allows you to work with configurable variables easily. Though it can create new variables for you, you can also add them manually.\nAll the help you could ever want is available on GitHub; feel free to sumbit any issue you may encounter and merge request."];
+    [alert beginSheetModalForWindow:window completionHandler:^(NSModalResponse returnCode) {
+        if (labs(NSModalResponseAbort) == labs(returnCode))
+            [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/dvkch/SYConfigurableVariable"]];
+    }];
 }
 
 + (void)sy_showNewVariablePromptInWindow:(NSWindow *)window completion:(void(^)(NSString *name, NSArray *values))completion
