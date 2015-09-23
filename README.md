@@ -17,7 +17,7 @@ Using this plugin will make your life easier! Well, at least I hope so.
 
 ####Step 1: Install the plugin
 
-It can either be done via [Alcatraz](http://alcatraz.io/) or by downloading the [GitHub project](github.com/dvkch/SYConfigurableVariable) and building it in Xcode which will automagically install the plugin.
+It can either be done via [Alcatraz](http://alcatraz.io/) or by downloading the [GitHub project](github.com/dvkch/SYConfigurableVariable) and building `SYConfigurableVariable.xcodeproj` in Xcode which will automagically install the plugin.
 
 ####Step 2: Create a new configurable variable in your project
 
