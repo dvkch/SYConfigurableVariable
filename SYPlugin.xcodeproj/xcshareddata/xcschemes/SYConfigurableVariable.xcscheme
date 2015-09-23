@@ -17,7 +17,7 @@
                BlueprintIdentifier = "976DBC701B6A577F00960056"
                BuildableName = "SYConfigurableVariable.xcplugin"
                BlueprintName = "SYConfigurableVariable"
-               ReferencedContainer = "container:SYConfigurableVariable.xcodeproj">
+               ReferencedContainer = "container:SYPlugin.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -58,15 +58,6 @@
          BundleIdentifier = "com.apple.dt.Xcode"
          FilePath = "/Applications/Xcode.app">
       </PathRunnable>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "976DBC701B6A577F00960056"
-            BuildableName = "SYConfigurableVariable.xcplugin"
-            BlueprintName = "SYConfigurableVariable"
-            ReferencedContainer = "container:SYConfigurableVariable.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -76,15 +67,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "976DBC701B6A577F00960056"
-            BuildableName = "SYConfigurableVariable.xcplugin"
-            BlueprintName = "SYConfigurableVariable"
-            ReferencedContainer = "container:SYConfigurableVariable.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
