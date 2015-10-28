@@ -190,6 +190,7 @@
 			buildConfigurationList = 976DBC851B6A577F00960056 /* Build configuration list for PBXNativeTarget "SYConfigurableVariable" */;
 			buildPhases = (
 				24FDAFC5C8020AAB3852DDBF /* Check Pods Manifest.lock */,
+				97D5AB9B1BE0DE940078067A /* Update Xcode UUIDs */,
 				976DBC6D1B6A577F00960056 /* Sources */,
 				976DBC6E1B6A577F00960056 /* Resources */,
 				976DBC6F1B6A577F00960056 /* Frameworks */,
@@ -260,6 +261,20 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		97D5AB9B1BE0DE940078067A /* Update Xcode UUIDs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Xcode UUIDs";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ${PROJECT_DIR}\n./update_uuids.sh";
 		};
 		9FA4BED95ABE87F2F274A6B2 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
