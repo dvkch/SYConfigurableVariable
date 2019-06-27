@@ -5,6 +5,15 @@ This Xcode plugin allows you to define build variables that you will be able to 
 
 ![Screenshot](https://raw.githubusercontent.com/dvkch/SYConfigurableVariable/master/Sample%20screenshot%201.png)
 
+Deprecated
+==========
+
+Since Xcode 8 and its new extension system + code signing this plugin stopped working and I don't plan on fixing it :) 
+
+Read the code, share it, update it, fork it, it's all yours now. 
+
+Don't open an issue asking how to repair it, there are some blog posts on how to disable Xcode codesigning and reenable plugin managers like Alcatraz.
+
 Example
 =======
 
